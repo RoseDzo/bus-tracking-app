@@ -27,7 +27,7 @@ const LoginScreen = ({ navigation }) => {
           placeholder="Full name"
           value={name}
           onChangeText={setName}
-        />
+        /> 
         
         <TextInput
           style={styles.input}
@@ -50,6 +50,7 @@ const LoginScreen = ({ navigation }) => {
 };
 
 const styles = StyleSheet.create({
+  
   container: {
     flex: 1,
     justifyContent: 'center',
@@ -58,6 +59,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 30,
     backgroundColor: 'white',
   },
+ 
   loginContainer: {
     width: '100%',
     backgroundColor: 'white',
@@ -67,6 +69,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     
   },
+ 
   tigerr:{
    width: '35%',
    height:'10%',
@@ -74,13 +77,13 @@ const styles = StyleSheet.create({
     borderRadius: 0,
   },
 
-  
-  title: {
+   title: {
     fontSize: 22,
     fontWeight: 'bold',
     marginBottom: 20,
     color: 'orange',
   },
+ 
   input: {
     height: 50,
     width: '100%',
@@ -99,11 +102,13 @@ const styles = StyleSheet.create({
     width: '100%',
     
   },
+ 
   buttonText: {
     color: 'black',
     fontSize: 16,
     fontWeight: 'bold',
   },
+ 
   signUpText: {
     color: '#FFFFFF',
     fontSize: 16,

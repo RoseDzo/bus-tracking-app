@@ -25,7 +25,7 @@ const MapScreen = () => {
   };
 
   const initWebSocket = () => {
-    const ws = new WebSocket('ws://172.20.10.4:8080'); // Replace with your WebSocket server URL
+    const ws = new WebSocket('ws://192.168.153.57:8080'); // Replace with your WebSocket server URL
     setWs(ws);
 
     ws.onopen = () => {
@@ -49,7 +49,7 @@ const MapScreen = () => {
 
   const fetchBuses = async () => {
     try {
-      const response = await fetch('http://172.20.10.4:3000/get-bus-location'); // Replace with your server URL
+      const response = await fetch('http://192.168.153.57:3000/get-bus-location'); // Replace with your server URL
       if (!response.ok) {
         throw new Error('Failed to fetch bus data');
       }
