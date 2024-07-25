@@ -52,7 +52,7 @@ export default function App() {
   const sendLocationToServer = async (latitude, longitude) => {
     try {
       const token = "my_secret_token_12345"; // Replace with the actual token
-      const response = await axios.post('http://192.168.153.57:3000/update-location', {
+      const response = await axios.post('http://localhost:3000/update-location', {
         latitude,
         longitude,
         token,
